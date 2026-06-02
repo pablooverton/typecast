@@ -42,7 +42,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site
-          cp -r index.html style.css app.mjs data types _site/
+          cp -r index.html style.css app.mjs favicon.svg og.png data types _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:

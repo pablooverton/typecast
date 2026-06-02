@@ -1,0 +1,12 @@
+{
+  "name": "claudetype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Your personality, flipped into an operating manual for your AI. Drop-in CLAUDE.md per MBTI type, with satisfaction and growth modes.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "license": "MIT"
+}

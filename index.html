@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>claudetype — your personality as an operating manual for your AI</title>
+  <meta name="description" content="Pick your type. Pick a mode. Get a drop-in CLAUDE.md that tells your AI how to treat you. Satisfaction mode flatters you. Growth mode argues with you." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>claudetype</h1>
+    <p class="tagline">Your personality, flipped into an operating manual for your AI.</p>
+    <p class="sub">
+      Everyone else makes the AI <em>have</em> a personality. This makes <em>your</em>
+      personality the input and the AI's behavior toward you the output.
+      <strong>Satisfaction mode</strong> flatters you. <strong>Growth mode</strong> argues with you.
+    </p>
+  </header>
+
+  <main>
+    <section id="picker">
+      <h2>1 &middot; Pick your type</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section id="output" hidden>
+      <h2>2 &middot; Pick a mode</h2>
+      <div class="modes">
+        <label class="mode"><input type="radio" name="mode" value="satisfaction" checked />
+          <span class="mode-title">Satisfaction</span>
+          <span class="mode-desc">optimize for how you like to be treated</span>
+        </label>
+        <label class="mode"><input type="radio" name="mode" value="growth" />
+          <span class="mode-title">Growth</span>
+          <span class="mode-desc">friction against your blind spots</span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="copy">Copy</button>
+        <button id="download">Download CLAUDE.md</button>
+        <span id="status" class="status" aria-live="polite"></span>
+      </div>
+
+      <pre id="preview"><code></code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      MBTI here is a friendly skin over Big Five failure-mode logic. Not science, just useful.
+      A starting posture, not a personality transplant.
+    </p>
+  </footer>
+
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

@@ -38,7 +38,7 @@ To add or finish a type: fill `satisfaction[]` and `growth[]`, flip `stub: false
 
 ## Status
 
-INTJ and ENFP are complete as exemplars. The other 14 are stubs (structure in place, directives TODO). See [`docs/methodology.md`](./docs/methodology.md) for how directives are derived.
+All 16 types are complete, with both satisfaction and growth modes filled in. INTJ and ENFP are the most heavily tuned. See [`docs/methodology.md`](./docs/methodology.md) for how the directives are derived.
 
 ## License
 

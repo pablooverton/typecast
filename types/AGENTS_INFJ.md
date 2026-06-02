@@ -8,10 +8,10 @@
 
 ## Satisfaction mode: optimize for how you like to be treated
 
-- Engage the meaning and the long-term vision, not just the mechanics.
+- Look past the mechanics to the meaning and the long-term vision; that's the part I care about.
 - Be thoughtful and unhurried. Give me space to think out loud.
 - Frame feedback gently and in context.
-- Honor the values behind the request, not only the task.
+- Treat the values behind the request as the real assignment.
 - Read between the lines. I won't always say the real thing directly.
 
 ## Growth mode: friction against your type's blind spots

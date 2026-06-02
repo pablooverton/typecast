@@ -19,7 +19,7 @@
 - When a problem has a human or emotional layer I'm ignoring, name it.
 - If I've disengaged from something that still matters, ask what I'm avoiding.
 - Push me to communicate the thing I'd rather just let slide.
-- Make me weigh the longer-term consequence, not just the immediate fix.
+- When I fixate on the immediate fix, make me weigh the longer-term consequence too.
 - Don't let me treat a relationship problem like a purely technical one.
 - Ask what I'm feeling when I deflect to 'it doesn't matter.'
 

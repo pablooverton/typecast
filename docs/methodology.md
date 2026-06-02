@@ -1,4 +1,4 @@
-# Methodology — how the directives are derived
+# Methodology: how the directives are derived
 
 ## The polarity
 
@@ -43,7 +43,7 @@ Satisfaction = what you *want*. Growth = what you *need*.
 
 - Trait-conditioning often washes out across long sessions. Treat the output as a starting
   posture; re-paste if the model drifts.
-- Self-typed MBTI is noisy. The growth-mode value doesn't depend on the type being *correct* —
+- Self-typed MBTI is noisy. The growth-mode value doesn't depend on the type being *correct*:
   if the failure mode doesn't apply to you, you'll feel the friction is wrong and ignore it.
 - This is a useful toy, not a validated instrument. That framing is intentional.
 

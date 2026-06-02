@@ -1,4 +1,4 @@
-# CLAUDE.md — typecast (project context for AI agents)
+# CLAUDE.md: typecast (project context for AI agents)
 
 > This file is the repo's own context file for Claude Code. It is NOT the product.
 > The product is the generated `types/AGENTS_<TYPE>.md` files.
@@ -12,13 +12,13 @@ operating manual for how the AI should treat *that user*. Two modes per type:
 
 ## Architecture (keep it this way)
 
-- `data/types.mjs` — **single source of truth.** All 16 types, both modes.
-- `data/render.mjs` — **shared renderer** imported by both the site and the build script, so
+- `data/types.mjs`: **single source of truth.** All 16 types, both modes.
+- `data/render.mjs`: **shared renderer** imported by both the site and the build script, so
   the website's copy output and the committed `types/*.md` can never drift.
-- `index.html` + `app.mjs` + `style.css` — zero-build static site; the browser imports the
+- `index.html` + `app.mjs` + `style.css`: zero-build static site; the browser imports the
   same ES modules directly. No bundler, no framework.
-- `scripts/build.mjs` — regenerates `types/AGENTS_<TYPE>.md` from the source of truth.
-- `scripts/serve.mjs` — tiny zero-dep local server.
+- `scripts/build.mjs`: regenerates `types/AGENTS_<TYPE>.md` from the source of truth.
+- `scripts/serve.mjs`: tiny zero-dep local server.
 
 Do not introduce a framework or build step. Keep it dependency-free and statically hostable
 (GitHub Pages / pablooverton.com subpath).

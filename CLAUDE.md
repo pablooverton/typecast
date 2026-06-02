@@ -1,8 +1,11 @@
-# CLAUDE.md — claudetype (project context for AI agents)
+# CLAUDE.md — typecast (project context for AI agents)
+
+> This file is the repo's own context file for Claude Code. It is NOT the product.
+> The product is the generated `types/AGENTS_<TYPE>.md` files.
 
 ## What this is
 
-A static, zero-build site + a set of drop-in `CLAUDE_<TYPE>.md` files. It inverts the usual
+A static, zero-build site + a set of drop-in `AGENTS_<TYPE>.md` files. It inverts the usual
 "give the AI a personality" pattern: the user's MBTI type is the input, and the output is an
 operating manual for how the AI should treat *that user*. Two modes per type:
 **satisfaction** (serve the trait's preference) and **growth** (push against the trait's failure mode).
@@ -14,7 +17,7 @@ operating manual for how the AI should treat *that user*. Two modes per type:
   the website's copy output and the committed `types/*.md` can never drift.
 - `index.html` + `app.mjs` + `style.css` — zero-build static site; the browser imports the
   same ES modules directly. No bundler, no framework.
-- `scripts/build.mjs` — regenerates `types/CLAUDE_<TYPE>.md` from the source of truth.
+- `scripts/build.mjs` — regenerates `types/AGENTS_<TYPE>.md` from the source of truth.
 - `scripts/serve.mjs` — tiny zero-dep local server.
 
 Do not introduce a framework or build step. Keep it dependency-free and statically hostable

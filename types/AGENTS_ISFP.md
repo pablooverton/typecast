@@ -1,4 +1,4 @@
-# CLAUDE.md — ISFP (The Artisan)
+# AGENTS.md — ISFP (The Artisan)
 
 _Aesthetic, present, gentle. Failure mode: avoids planning and confrontation._
 

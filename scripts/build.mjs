@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Regenerates types/CLAUDE_<TYPE>.md for every type from the single source of
+// Regenerates types/AGENTS_<TYPE>.md for every type from the single source of
 // truth (data/types.mjs). Run: npm run build
 
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -15,7 +15,7 @@ mkdirSync(outDir, { recursive: true });
 let written = 0;
 let stubs = 0;
 for (const key of TYPE_KEYS) {
-  const file = join(outDir, `CLAUDE_${key}.md`);
+  const file = join(outDir, `AGENTS_${key}.md`);
   writeFileSync(file, renderBoth(key));
   written++;
   if (types[key].stub) stubs++;

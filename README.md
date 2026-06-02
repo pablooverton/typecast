@@ -1,8 +1,8 @@
-# claudetype
+# typecast
 
 **Your personality, flipped into an operating manual for your AI.**
 
-Everyone else makes the AI *have* a personality ("act like an ENFP"). claudetype does the inverse: your personality is the **input**, and the AI's behavior **toward you** is the output. Pick your type, pick a mode, get a drop-in `CLAUDE.md`.
+Everyone else makes the AI *have* a personality ("act like an ENFP"). typecast does the inverse: your personality is the **input**, and the AI's behavior **toward you** is the output. Pick your type, pick a mode, get a drop-in `AGENTS.md`.
 
 Two modes:
 
@@ -15,9 +15,9 @@ A horoscope flatters you. Growth mode does the opposite.
 
 1. Open the site (or browse [`types/`](./types) and grab your file directly).
 2. Pick your type, pick a mode.
-3. Copy into your project's `CLAUDE.md`, or paste into ChatGPT/Claude custom instructions.
+3. Save it as `AGENTS.md` in your project root, or paste into ChatGPT/Claude custom instructions.
 
-The output is plain markdown and works with any model. The `CLAUDE.md` filename is just the friendly Claude Code convention.
+`AGENTS.md` is the cross-tool convention read by Cursor, Windsurf, and others (and Claude Code via import). The output is plain markdown, so it works with any model anywhere.
 
 ## How it actually works
 
@@ -31,7 +31,7 @@ Single source of truth is [`data/types.mjs`](./data/types.mjs). The site and the
 
 ```bash
 npm run serve   # local preview at http://localhost:5173 (no build step)
-npm run build   # regenerate types/CLAUDE_<TYPE>.md from data/types.mjs
+npm run build   # regenerate types/AGENTS_<TYPE>.md from data/types.mjs
 ```
 
 To add or finish a type: fill `satisfaction[]` and `growth[]`, flip `stub: false`, run `npm run build`.

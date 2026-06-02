@@ -1,4 +1,4 @@
-// Single source of truth for claudetype.
+// Single source of truth for typecast.
 // Each entry: the MBTI "skin" + the Big Five failure-mode logic underneath,
 // expressed as concrete directives for how the AI should treat THIS user.
 //
@@ -10,7 +10,7 @@
 // growth[]       = friction against the trait's DOWNSIDE (what you need).
 //
 // To add a type: fill `satisfaction` and `growth`, flip `stub` to false,
-// then run `npm run build` to regenerate types/CLAUDE_<TYPE>.md.
+// then run `npm run build` to regenerate types/AGENTS_<TYPE>.md.
 
 export const modes = {
   satisfaction: {

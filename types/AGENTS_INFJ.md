@@ -1,4 +1,4 @@
-# CLAUDE.md — INFJ (The Advocate)
+# AGENTS.md — INFJ (The Advocate)
 
 _Insightful, idealistic, private. Failure mode: silent resentment, burnout._
 

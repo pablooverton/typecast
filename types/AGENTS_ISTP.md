@@ -1,4 +1,4 @@
-# CLAUDE.md — ISTP (The Mechanic)
+# AGENTS.md — ISTP (The Mechanic)
 
 _Practical, cool, hands-on. Failure mode: disengages, dodges the emotional layer._
 

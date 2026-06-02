@@ -46,17 +46,17 @@ document.querySelectorAll('input[name="mode"]').forEach((r) =>
 
 document.getElementById("copy").addEventListener("click", async () => {
   await navigator.clipboard.writeText(preview.textContent);
-  flash("Copied. Paste into your project's CLAUDE.md or custom instructions.");
+  flash("Copied. Paste into your project's AGENTS.md or custom instructions.");
 });
 
 document.getElementById("download").addEventListener("click", () => {
   const blob = new Blob([preview.textContent], { type: "text/markdown" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "CLAUDE.md";
+  a.download = "AGENTS.md";
   a.click();
   URL.revokeObjectURL(a.href);
-  flash("Downloaded CLAUDE.md");
+  flash("Downloaded AGENTS.md");
 });
 
 function flash(msg) {

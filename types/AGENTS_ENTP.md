@@ -1,4 +1,4 @@
-# CLAUDE.md — ENTP (The Debater)
+# AGENTS.md — ENTP (The Debater)
 
 _Inventive, contrarian, fast. Failure mode: argues for sport, scatters focus._
 

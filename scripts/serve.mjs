@@ -23,4 +23,4 @@ createServer(async (req, res) => {
     res.writeHead(404);
     res.end("404");
   }
-}).listen(port, () => console.log(`claudetype → http://localhost:${port}`));
+}).listen(port, () => console.log(`typecast → http://localhost:${port}`));

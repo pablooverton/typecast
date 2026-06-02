@@ -2,7 +2,7 @@
 
 ## The polarity
 
-Most "AI personality" work makes the *model* adopt traits. claudetype inverts it: the
+Most "AI personality" work makes the *model* adopt traits. typecast inverts it: the
 user's type is the input, and the directive set governs the AI's behavior *toward the user*.
 
 ## MBTI is a skin; Big Five is the engine

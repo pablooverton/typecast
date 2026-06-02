@@ -3,12 +3,21 @@ import { types, TYPE_KEYS } from "./data/types.mjs";
 import { renderConfig } from "./data/render.mjs";
 import { examples } from "./data/examples.mjs";
 
+// A little fun: one glyph per type (no external assets, works offline).
+const EMOJI = {
+  INTJ: "♟️", INTP: "🔬", ENTJ: "📊", ENTP: "⚡",
+  INFJ: "🕯️", INFP: "🌙", ENFJ: "🤝", ENFP: "✨",
+  ISTJ: "📐", ISFJ: "🛡️", ESTJ: "🗂️", ESFJ: "🎈",
+  ISTP: "🔧", ISFP: "🎨", ESTP: "🏍️", ESFP: "🎤",
+};
+
 const grid = document.getElementById("grid");
 const output = document.getElementById("output");
 const preview = document.querySelector("#preview code");
 const status = document.getElementById("status");
 const exPrompt = document.getElementById("ex-prompt");
 const exReply = document.getElementById("ex-reply");
+const outputType = document.getElementById("output-type");
 
 let selected = null;
 
@@ -25,6 +34,7 @@ function render() {
     exPrompt.textContent = ex.prompt;
     exReply.textContent = ex[mode];
   }
+  outputType.textContent = `${EMOJI[selected] || ""} ${selected} · ${types[selected].nickname}`;
 }
 
 // Build the 16-card grid.
@@ -33,7 +43,8 @@ for (const key of TYPE_KEYS) {
   const card = document.createElement("button");
   card.className = "card" + (t.stub ? " stub" : "");
   card.dataset.type = key;
-  card.innerHTML = `<span class="mbti">${key}</span>
+  card.innerHTML = `<span class="emoji">${EMOJI[key] || ""}</span>
+    <span class="mbti">${key}</span>
     <span class="nick">${t.nickname}</span>
     <span class="blurb">${t.blurb}</span>
     ${t.stub ? '<span class="soon">coming soon</span>' : ""}`;

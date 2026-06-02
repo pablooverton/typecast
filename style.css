@@ -31,11 +31,14 @@ h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: 
 .card:hover { border-color: var(--accent); }
 .card:active { transform: translateY(1px); }
 .card.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.card .emoji { font-size: 1.7rem; line-height: 1; }
 .card .mbti { font-weight: 700; font-size: 1.1rem; letter-spacing: 0.04em; }
 .card .nick { color: var(--accent); font-size: 0.9rem; }
 .card .blurb { color: var(--muted); font-size: 0.8rem; }
 .card.stub { opacity: 0.55; cursor: not-allowed; }
 .card .soon { font-size: 0.7rem; color: var(--stub); text-transform: uppercase; letter-spacing: 0.06em; }
+
+.output-type { font-size: 1.5rem; font-weight: 700; margin: 8px 0 4px; letter-spacing: -0.01em; }
 
 .modes { display: flex; gap: 12px; flex-wrap: wrap; }
 .mode {

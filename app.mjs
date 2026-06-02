@@ -1,11 +1,14 @@
 // Zero-build: the browser imports the same data + renderer the build script uses.
 import { types, TYPE_KEYS } from "./data/types.mjs";
 import { renderConfig } from "./data/render.mjs";
+import { examples } from "./data/examples.mjs";
 
 const grid = document.getElementById("grid");
 const output = document.getElementById("output");
 const preview = document.querySelector("#preview code");
 const status = document.getElementById("status");
+const exPrompt = document.getElementById("ex-prompt");
+const exReply = document.getElementById("ex-reply");
 
 let selected = null;
 
@@ -15,7 +18,13 @@ function currentMode() {
 
 function render() {
   if (!selected) return;
-  preview.textContent = renderConfig(selected, currentMode());
+  const mode = currentMode();
+  preview.textContent = renderConfig(selected, mode);
+  const ex = examples[selected];
+  if (ex) {
+    exPrompt.textContent = ex.prompt;
+    exReply.textContent = ex[mode];
+  }
 }
 
 // Build the 16-card grid.

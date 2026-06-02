@@ -61,4 +61,16 @@ pre {
   padding: 18px; overflow-x: auto; white-space: pre-wrap; word-break: break-word;
   font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; color: #d7dbe2;
 }
+.example { margin-top: 34px; }
+.ex-note { color: var(--muted); font-size: 0.85rem; margin: -6px 0 14px; }
+.exchange { display: flex; flex-direction: column; gap: 10px; }
+.bubble {
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+  display: flex; flex-direction: column; gap: 5px; max-width: 88%;
+}
+.bubble .who { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+.bubble.user { background: var(--panel); align-self: flex-start; }
+.bubble.ai { background: #0b0d12; border-color: var(--accent); align-self: flex-end; }
+.bubble.ai .who { color: var(--accent); }
+
 footer { color: var(--muted); font-size: 0.8rem; padding: 40px 20px 60px; }

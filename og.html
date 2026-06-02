@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  html, body { margin: 0; padding: 0; }
+  .card {
+    width: 1200px; height: 630px; box-sizing: border-box;
+    background: #0f1115; color: #e8eaed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 84px 90px; position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .accentbar { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: #7c9cff; }
+  .word { font-size: 122px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; margin: 0; }
+  .word .dot { color: #7c9cff; }
+  .tag { font-size: 42px; line-height: 1.25; font-weight: 500; max-width: 1000px; margin: 30px 0 0; }
+  .foot { display: flex; justify-content: space-between; align-items: flex-end; }
+  .modes { display: flex; gap: 16px; font-size: 28px; }
+  .pill { padding: 10px 22px; border-radius: 999px; border: 1px solid #262b35; color: #9aa0aa; }
+  .pill.growth { border-color: #7c9cff; color: #7c9cff; }
+  .url { color: #9aa0aa; font-size: 28px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="accentbar"></div>
+    <div>
+      <p class="word">typecast<span class="dot">.</span></p>
+      <p class="tag">Your personality, flipped into an operating manual for your AI.</p>
+    </div>
+    <div class="foot">
+      <div class="modes">
+        <span class="pill">satisfaction &middot; flatters you</span>
+        <span class="pill growth">growth &middot; argues with you</span>
+      </div>
+      <div class="url">pablooverton.com/typecast</div>
+    </div>
+  </div>
+</body>
+</html>

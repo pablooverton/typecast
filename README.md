@@ -2,6 +2,8 @@
 
 **Your personality, flipped into an operating manual for your AI.**
 
+**[Try it → pablooverton.com/typecast](https://www.pablooverton.com/typecast/)**
+
 Everyone else makes the AI *have* a personality ("act like an ENFP"). typecast does the inverse: your personality is the **input**, and the AI's behavior **toward you** is the output. Pick your type, pick a mode, get a drop-in `AGENTS.md`.
 
 Two modes:
@@ -13,7 +15,7 @@ A horoscope flatters you. Growth mode does the opposite.
 
 ## Use it
 
-1. Open the site (or browse [`types/`](./types) and grab your file directly).
+1. Open [the site](https://www.pablooverton.com/typecast/) (or browse [`types/`](./types) and grab your file directly).
 2. Pick your type, pick a mode.
 3. Save it as `AGENTS.md` in your project root, or paste into ChatGPT/Claude custom instructions.
 

@@ -66,7 +66,7 @@ document.querySelectorAll('input[name="mode"]').forEach((r) =>
 
 document.getElementById("copy").addEventListener("click", async () => {
   await navigator.clipboard.writeText(preview.textContent);
-  flash("Copied. Paste into your project's AGENTS.md or custom instructions.");
+  flash("Copied. Now paste it into your AI's instructions (step 3 below).");
 });
 
 document.getElementById("download").addEventListener("click", () => {
@@ -76,7 +76,7 @@ document.getElementById("download").addEventListener("click", () => {
   a.download = "AGENTS.md";
   a.click();
   URL.revokeObjectURL(a.href);
-  flash("Downloaded AGENTS.md");
+  flash("Saved AGENTS.md. See step 3 below for where it goes.");
 });
 
 function flash(msg) {

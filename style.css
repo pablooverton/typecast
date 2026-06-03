@@ -81,4 +81,14 @@ pre {
 .bubble.ai { background: #0b0d12; border-color: var(--accent); align-self: flex-end; }
 .bubble.ai .who { color: var(--accent); }
 
+.howto { margin-top: 34px; }
+.howto-lead { color: var(--muted); font-size: 0.85rem; margin: -6px 0 14px; }
+.howto-list { margin: 0 0 14px; padding-left: 20px; }
+.howto-list li { margin: 7px 0; }
+.howto-list code {
+  background: #0b0d12; border: 1px solid var(--line); border-radius: 6px;
+  padding: 1px 6px; font: 0.85em ui-monospace, SFMono-Regular, Menlo, monospace; color: #d7dbe2;
+}
+.howto-note { color: var(--muted); font-size: 0.85rem; margin: 0; }
+
 footer { color: var(--muted); font-size: 0.8rem; padding: 40px 20px 60px; }

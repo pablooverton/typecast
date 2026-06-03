@@ -5,24 +5,26 @@
 Most "AI personality" work makes the *model* adopt traits. typecast inverts it: the
 user's type is the input, and the directive set governs the AI's behavior *toward the user*.
 
-## MBTI is a skin; Big Five is the engine
+## MBTI is the front door; Big Five is the grounding
 
 MBTI is widely treated as pseudoscience, but it's a recognizable, low-friction front door
-("I'm an INTJ" is shareable; "I'm O+ C+ E- A- N-" is not). So each MBTI type is mapped to a
-Big Five (OCEAN) profile, and directives are written against that profile.
+("I'm an INTJ" is shareable; "I'm O+ C+ E- A- N-" is not). So MBTI stays the label you pick,
+and the directives underneath are written against the well-documented failure modes of the
+Big Five traits each type leans toward. There's no OCEAN profile computed or stored per type;
+Big Five is the lens the directives were authored through, not a number the code crunches.
 
-Rough mapping used (skin → engine):
+Rough mapping (each letter → the trait that drives its directives):
 
-| MBTI axis | Big Five lever |
-|-----------|----------------|
+| MBTI letter | Big Five trait it leans on |
+|-------------|----------------------------|
 | N (intuition) | high Openness |
 | J (judging)   | high Conscientiousness |
 | E (extraversion) | high Extraversion |
 | F (feeling)   | high Agreeableness |
-| T (thinking)  | low Agreeableness (skeptical/critical) |
-| Turbulent     | high Neuroticism |
+| T (thinking)  | low Agreeableness (skeptical, critical) |
 
-This mapping is lossy and deliberately so. The directives matter, not the taxonomy.
+This mapping is lossy and deliberately so. It covers the letters that most shape the
+directives, not every axis. The directives matter, not the taxonomy.
 
 ## Two modes from one trait
 
@@ -35,7 +37,6 @@ For each trait, the **preference** and the **failure mode** are two sides of the
 | Extraversion | match energy, riff, brainstorm | redirect hype into one concrete action |
 | Agreeableness | warmth, context, tradeoff framing | name the conflict being avoided |
 | low Agreeableness | terse, evidence-first, no padding | surface the human factor that was skipped |
-| Neuroticism | reassurance, low-pressure framing | separate the catastrophe from the fact |
 
 Satisfaction = what you *want*. Growth = what you *need*.
 

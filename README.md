@@ -16,14 +16,17 @@ A horoscope flatters you. Growth mode does the opposite.
 ## Use it
 
 1. Open [the site](https://www.pablooverton.com/typecast/) (or browse [`types/`](./types) and grab your file directly).
-2. Pick your type, pick a mode.
-3. Save it as `AGENTS.md` in your project root, or paste into ChatGPT/Claude custom instructions.
+2. Pick your type, pick a mode, and copy the result.
+3. Hand it to your AI as its instructions. From then on it treats you that way in every new chat:
+   - **ChatGPT:** Settings → Personalization → Custom instructions.
+   - **Claude & Claude Code:** save as `CLAUDE.md` in your project, or paste into a Project's instructions.
+   - **Cursor, Windsurf, and most coding tools:** save as `AGENTS.md` in your project root.
 
-`AGENTS.md` is the cross-tool convention read by Cursor, Windsurf, and others (and Claude Code via import). The output is plain markdown, so it works with any model anywhere.
+`AGENTS.md` is the cross-tool convention read by Cursor, Windsurf, and others (Claude Code reads it too). It's plain markdown, so it works with any model anywhere. If the AI drifts back over a long session, paste it again.
 
 ## How it actually works
 
-MBTI is the friendly front door. Under the hood, each type maps to a **Big Five** profile, and the directives are written against that profile's well-documented failure modes (e.g. low Conscientiousness → unfinished projects → growth mode forces a deadline; high Openness → analysis paralysis → growth mode forces a ship decision).
+MBTI is the friendly front door. Under the hood, each type's directives are written against the well-documented failure modes of the **Big Five** traits its letters lean toward (e.g. low Conscientiousness → unfinished projects → growth mode forces a deadline; high Openness → analysis paralysis → growth mode forces a ship decision).
 
 This is **a starting posture, not a personality transplant.** Trait-conditioning tends to wash out over long sessions. Re-paste if the AI drifts. The honesty is the point: this is useful, not science.
 

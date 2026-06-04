@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>typecast: your personality as an operating manual for your AI</title>
-  <meta name="description" content="Pick your type. Pick a mode. Get a drop-in AGENTS.md that tells your AI how to treat you. Satisfaction mode flatters you. Growth mode argues with you." />
+  <title>typecast: your personality as custom instructions for your AI</title>
+  <meta name="description" content="Pick your type. Pick a mode. Get ready-made custom instructions that tell your AI how to treat you. Satisfaction mode flatters you. Growth mode argues with you." />
 
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
 
   <!-- Open Graph / social cards -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="typecast" />
-  <meta property="og:title" content="typecast: your personality as an operating manual for your AI" />
-  <meta property="og:description" content="Pick your type. Pick a mode. Get a drop-in AGENTS.md that tells your AI how to treat you. Satisfaction mode flatters you. Growth mode argues with you." />
+  <meta property="og:title" content="typecast: your personality as custom instructions for your AI" />
+  <meta property="og:description" content="Pick your type. Pick a mode. Get ready-made custom instructions that tell your AI how to treat you. Satisfaction mode flatters you. Growth mode argues with you." />
   <meta property="og:url" content="https://www.pablooverton.com/typecast/" />
   <meta property="og:image" content="https://www.pablooverton.com/typecast/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="typecast: your personality as an operating manual for your AI" />
-  <meta name="twitter:description" content="Pick your type. Pick a mode. Get a drop-in AGENTS.md that tells your AI how to treat you." />
+  <meta name="twitter:title" content="typecast: your personality as custom instructions for your AI" />
+  <meta name="twitter:description" content="Pick your type. Pick a mode. Get ready-made custom instructions that tell your AI how to treat you." />
   <meta name="twitter:image" content="https://www.pablooverton.com/typecast/og.png" />
 
   <link rel="stylesheet" href="./style.css" />
@@ -27,7 +27,7 @@
 <body>
   <header>
     <h1>typecast</h1>
-    <p class="tagline">Your personality, flipped into an operating manual for your AI.</p>
+    <p class="tagline">Your personality, flipped into custom instructions for your AI.</p>
     <p class="sub">
       Everyone else makes the AI <em>have</em> a personality. This makes <em>your</em>
       personality the input and the AI's behavior toward you the output.
@@ -38,6 +38,10 @@
   <main>
     <section id="picker">
       <h2>1 &middot; Pick your type</h2>
+      <p class="picker-help">
+        Don't know your type? <a href="https://www.16personalities.com/free-personality-test" target="_blank" rel="noopener">Take the test</a> (~12 min), then use your first four letters.
+        <span class="picker-help-alt">Want stricter? Try <a href="https://sakinorva.net/functions" target="_blank" rel="noopener">sakinorva</a>.</span>
+      </p>
       <div id="grid" class="grid"></div>
     </section>
 
@@ -74,12 +78,14 @@
 
       <div class="howto">
         <h2>3 &middot; Drop it into your AI</h2>
-        <p class="howto-lead">Paste it into your AI's instructions and it treats you this way from now on, in every new chat:</p>
+        <p class="howto-lead">These are custom instructions about <em>you</em>, so they belong where they apply to all your chats, not just one project:</p>
         <ul class="howto-list">
-          <li><b>ChatGPT:</b> Settings &rarr; Personalization &rarr; Custom instructions, then paste it in.</li>
-          <li><b>Claude &amp; Claude Code:</b> save it as <code>CLAUDE.md</code> in your project, or paste it into a Project's instructions.</li>
-          <li><b>Cursor, Windsurf, and most coding tools:</b> save it as <code>AGENTS.md</code> in your project root.</li>
+          <li><b>ChatGPT:</b> Settings &rarr; Personalization &rarr; Custom Instructions. Applies to every chat right away.</li>
+          <li><b>Claude (web &amp; app):</b> Settings &rarr; Profile. Profile instructions are account-wide.</li>
+          <li><b>Claude Code:</b> save it as <code>~/.claude/CLAUDE.md</code>, your user file, loaded in every project. (Claude Code reads <code>CLAUDE.md</code>, not <code>AGENTS.md</code>.)</li>
+          <li><b>Cursor:</b> Settings &rarr; Rules &rarr; User Rules. <b>Windsurf:</b> Global Rules. Both apply across all your projects.</li>
         </ul>
+        <p class="howto-note">Want it for just one repo instead? Drop it in that project: <code>./CLAUDE.md</code>, or <code>AGENTS.md</code> in the root for Cursor and Windsurf. Best for your own solo projects; you usually don't want your personal instructions committed into a shared team repo.</p>
         <p class="howto-note">Plain markdown, so it works with any model anywhere. If the AI slides back to its old self in a long chat, paste it again.</p>
       </div>
     </section>

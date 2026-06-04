@@ -73,10 +73,10 @@ document.getElementById("download").addEventListener("click", () => {
   const blob = new Blob([preview.textContent], { type: "text/markdown" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "AGENTS.md";
+  a.download = "CLAUDE.md";
   a.click();
   URL.revokeObjectURL(a.href);
-  flash("Saved AGENTS.md. See step 3 below for where it goes.");
+  flash("Saved CLAUDE.md. See step 3 below for where it goes.");
 });
 
 function flash(msg) {
